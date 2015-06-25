@@ -1,0 +1,63 @@
+$mq-tablet-portrait-and-up: 48em !default;
+
+//  768px
+$mq-tablet-landscape-and-up: 64em !default;
+
+//  1024px
+$mq-phone-and-up: 40em !default;
+
+// 640px
+$mq-mobile-only: 39.938em !default;
+
+$mq-sm-desktop-and-up: 64.063em !default;
+
+$mq-xl-desktop-and-up : 1441px !default;
+
+@mixin full-size-images-and-up {
+    @media (min-width: 516px) {
+        @content;
+    }
+}
+
+@mixin sm-desktop-and-up {
+    @media (min-width: $mq-sm-desktop-and-up) {
+        @content;
+    }
+}
+
+@mixin xl-desktop-and-up {
+    @media (min-width: $mq-xl-desktop-and-up) {
+        @content;
+    }
+}
+
+@mixin tablet-portrait-and-up {
+    @media (min-width: $mq-tablet-portrait-and-up) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape-and-up {
+    @media (min-width: $mq-tablet-landscape-and-up) {
+        @content;
+    }
+}
+
+@mixin phone-and-up {
+    @media (min-width: $mq-phone-and-up) {
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    @media (max-width: $mq-mobile-only) {
+        @content;
+    }
+}
+
+// Larger than portrait but less than or equal to the landscape width
+@mixin tablet-between-portrait-landscape {
+    @media only screen and (min-width: $mq-tablet-portrait-and-up + 1) and (max-width: $mq-tablet-landscape-and-up) {
+        @content;
+    }
+}

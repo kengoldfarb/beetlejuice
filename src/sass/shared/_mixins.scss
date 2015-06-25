@@ -1,0 +1,55 @@
+@mixin transform($var...) {
+    -webkit-transform: $var;
+    -moz-transform: $var;
+    -ms-transform: $var;
+    -o-transform: $var;
+    transform: $var;
+}
+
+@mixin transition($var...) {
+    -webkit-transition: $var;
+    -moz-transition: $var;
+    -ms-transition: $var;
+    -o-transition: $var;
+    transition: $var;
+}
+
+@mixin filter($var...) {
+    -webkit-filter: $var;
+    -moz-filter: $var;
+    -ms-filter: $var;
+    -o-filter: $var;
+    filter: $var;
+}
+
+@mixin box-sizing($var) {
+    -webkit-box-sizing: $var;
+    -moz-box-sizing: $var;
+    -ms-box-sizing: $var;
+    -o-box-sizing: $var;
+    box-sizing: $var;
+}
+
+@mixin clip-path($var...) {
+    -webkit-clip-path: $var;
+    -moz-clip-path: $var;
+    -ms-clip-path: $var;
+    -o-clip-path: $var;
+    clip-path: $var;
+}
+
+@mixin backface-visibility($var) {
+    -webkit-backface-visibility: $var;
+    -moz-backface-visibility: $var;
+    -ms-backface-visibility: $var;
+    -o-backface-visibility: $var;
+    backface-visibility: $var;
+}
+
+@mixin box-shadow($var...) {
+    -webkit-box-shadow: $var;
+    -moz-box-shadow: $var;
+    -ms-box-shadow: $var;
+    -o-box-shadow: $var;
+    box-shadow: $var;
+}

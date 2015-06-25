@@ -1,0 +1,194 @@
+@mixin font-headline {
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@mixin font-regular {
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@mixin font-bold {
+    font-family: 'Yantramanav', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin font-huge {
+    font-size: 2.1rem;
+}
+
+@mixin font-xl {
+    font-size: 1.5rem;
+}
+
+@mixin font-lg {
+    font-size: 1.25rem;
+}
+
+@mixin font-ml {
+    font-size: 1.00rem;
+}
+
+@mixin font-md {
+    font-size: 0.85rem;
+}
+
+@mixin font-sm {
+    font-size: 0.75rem;
+}
+
+@mixin font-xs {
+    font-size: 0.64rem;
+}
+
+@mixin font-xxs {
+    font-size: 0.50rem;
+}
+
+html {
+    font-size: 16px;
+    @include tablet-portrait-and-up {
+        font-size: 17px;
+    }
+}
+
+h1, .post-title a {
+    @include font-headline;
+    font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6 {
+    @include font-regular;
+}
+
+h2 {
+    font-size: 1.65rem;
+    border-bottom: 1px solid $gray;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+p, label {
+    @include font-regular;
+    @include font-sm;
+}
+
+p {
+    @include font-ml();
+    line-height: 17px;
+}
+
+a, .post-meta {
+    @include font-regular;
+    @include font-ml();
+    color: $black;
+    @include transition(0.25s);
+    svg {
+        fill: $black;
+        @include transition(0.25s);
+    }
+
+    &:hover, &.active {
+        color: $gold;
+        @include transition(0.25s);
+        svg {
+            fill: $gold;
+            @include transition(0.25s);
+        }
+    }
+}
+
+code, tt {
+    // @include font-md;
+}
+
+pre {
+
+}
+
+pre code, pre tt {
+    @include font-ml;
+    line-height: 19px;
+}
+
+blockquote {
+    border-left: 0.4em solid $med-gray;
+
+    p {
+        @include font-lg;
+    }
+}
+
+strong {
+    @include font-bold;
+}
+
+em {
+    @include font-regular;
+    font-style: italic;
+}
+
+ul, ol {
+    @include font-regular;
+
+    li {
+        margin: 0 0 5px 0;
+        line-height: 0;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.nav li a {
+    @include font-bold;
+    @include font-md;
+}
+
+.copyright, .poweredby, .post-meta {
+    @include font-regular;
+    @include font-sm;
+}
+
+.post-footer p, .page-number, .site-footer a, .post-meta a, .post-date, .author-meta span {
+    @include font-regular;
+    @include font-sm;
+}
+
+.post-date:hover,.post-meta:hover, .post-meta.active {
+    color: initial;
+}
+
+.post-excerpt p {
+    @include font-regular;
+    @include font-md;
+}
+
+.post-footer h4 {
+    @include font-regular;
+    @include font-md;
+}
+
+.post-footer .share a {
+    margin: 10px;   
+}

@@ -1,0 +1,36 @@
+{
+  "name": "ken-ghost",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "*",
+    "backbone": "1.1.2",
+    "brfs": "1.2.0",
+    "headroom": "git://github.com/WickyNilliams/headroom.js#master",
+    "jquery.cookie": "^1.4.1",
+    "lodash": "*",
+    "moment": "^2.9.0",
+    "node-uuid": "*",
+    "sanitizer": "git://github.com/kengoldfarb/Caja-HTML-Sanitizer#master",
+    "skrollr": "^0.6.26",
+    "stable": "*",
+    "swig": "git://github.com/kengoldfarb/swig.git#master",
+    "swig-loader": "git://github.com/kengoldfarb/nodejs-swig-loader.git#master",
+    "transform-loader": "^0.2.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "0.1.9",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "*",
+    "grunt-jsbeautifier": "*",
+    "grunt-sass": "^1.0.0",
+    "grunt-sass-convert": "*",
+    "grunt-webpack": "^1.0.8",
+    "remapify": "*",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}

@@ -1,0 +1,43 @@
+body {
+	@include font-regular;
+	@include font-md;
+
+	line-height: 10px;
+}
+
+.about-logo {
+	@include transition(0.25s);
+	border: 1px solid $gray;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	padding: 3px;
+	// float:left;
+	margin: 10px;
+	position: relative;
+
+	@include filter(grayscale(80%));
+
+	&:hover {
+		@include transition(0.25s);
+		@include filter(grayscale(0%));
+		border: 1px solid $black;
+		// opacity: 0.8;
+	}
+
+	img {
+		margin: auto;
+		position: absolute;
+		top: 0; bottom: 0;
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+
+.post-content {
+	// overflow: hidden;
+}
+
+// .no-cover.post-head.main-header {
+// 	background-image: url(http://d2ofzqa497k72z.cloudfront.net/2015/Jun/dogs_1200x1200-1435215170747.jpg);
+// }

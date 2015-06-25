@@ -1,0 +1,17 @@
+.post-template {
+	.post-date {
+		@include font-regular;
+		@include font-md;
+		color: $med-gray;
+	}
+}
+
+.post {
+	@include font-regular;
+	@include font-md;
+}
+
+// .post-date {
+// 	@include font-regular;
+// 	@include font-md;
+// }
